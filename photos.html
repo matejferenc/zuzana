@@ -16,9 +16,9 @@
       <nav class="top-bar" data-topbar role="navigation">
       </nav>
   
-  <div class="row">
-	  <div class="small-centered large-centered columns small-12 large-12">
-           <ul id="photos" class="small-block-grid-3">
+  <div class="row fullWidth">
+	  <div class="small-centered large-centered columns">
+           <ul id="photos" class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
 	      </ul>
 	  </div>
   </div>
@@ -26,7 +26,7 @@
       $(function() {
     	  var numbers = ["8", "4", "7", "15", "23", "22", "13", "18", "1", "20", "12", "5", "11", "14", "6", "17", "3", "24", "2", "10", "16", "9", "26", "21", "25"];
     	  for (var i = 0; i < numbers.length; i++) {
-    		  var photo = $("<li><a href='img/photos/default/" + numbers[i] + ".jpg'><img src='img/photos/1000/" + numbers[i] + ".jpg'/><a/></li>");
+    		  var photo = $("<li><a href='img/photos/default/" + numbers[i] + ".jpg'><img src='img/photos/500/" + numbers[i] + ".jpg'/><a/></li>");
 	    	  $("#photos").append(photo);		  
     	  }
       });
