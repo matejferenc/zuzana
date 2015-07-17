@@ -11,3 +11,7 @@ section.top-bar-section {
     max-width: initial;
     display: block;
 }
+
+body {
+    background-color: black;
+}
