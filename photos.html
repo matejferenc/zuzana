@@ -6,15 +6,20 @@
     <title>Zuzana</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/nav.js"></script>
   </head>
   <body>
-    
+
+  <div>
       <nav class="top-bar" data-topbar role="navigation">
+          <section class='top-bar-section'>
+              <ul><li><a href='photos.html'>Photos</a></li></ul>
+              <ul><li><a href='measurements.html'>Measurements</a></li></ul>
+              <ul><li><a href='contact.html'>Contact</a></li></ul>
+          </section>
       </nav>
+  </div>
   
   <div class="row fullWidth">
 	  <div class="small-centered large-centered columns">
@@ -26,7 +31,7 @@
       $(function() {
     	  var numbers = ["8", "27", "4", "7", "15", "23", "29", "22", "13", "18", "1", "20", "12", "5", "11", "14", "6", "17", "3", "24", "2", "28", "10", "16", "9", "26", "21", "25"];
     	  for (var i = 0; i < numbers.length; i++) {
-    		  var photo = $("<li><a href='img/photos/default/" + numbers[i] + ".jpg'><img src='img/photos/500/" + numbers[i] + ".jpg'/><a/></li>");
+    		  var photo = $("<li><a href='img/photos/default/" + numbers[i] + ".jpg'><img src='img/photos/1000/" + numbers[i] + ".jpg'/><a/></li>");
 	    	  $("#photos").append(photo);		  
     	  }
       });
