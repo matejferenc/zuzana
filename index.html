@@ -37,6 +37,11 @@
 
     <script>
       $(document).foundation();
+      $(function() {
+          document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+          document.body.scroll = "no"; // ie only
+          $("body").css("overflow", "hidden");
+      });
     </script>
   </body>
 </html>
